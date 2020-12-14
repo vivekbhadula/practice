@@ -26,9 +26,15 @@ class square implements Shape {
   num get area => pow(side, 2);
 }
 
+Shape shapeFactory(String type) {
+  if (type == 'Circle') return circle(2);
+  if (type == 'Square') return square(2);
+  throw 'Can\'t create $type.';
+}
+
 main(List<String> args) {
-  final Circle = circle(2);
-  final Square = square(4);
+  final Circle = shapeFactory('Circle');
+  final Square = shapeFactory('Square');
   print(Circle.area);
   print(Square.area);
 }
