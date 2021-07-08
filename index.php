@@ -26,5 +26,57 @@ echo rtrim("$name");
 echo "<br>";
 echo ltrim($name);
 echo "</pre>";
+echo "<br>";
+
+$a = 45;
+$b = 4;
+echo var_dump($a < $b);
+echo "<br>";
+echo var_dump($a <> $b);
+echo "<br>";
+
+if ($a > 18) {
+    echo "You can drink anything.";
+}
+elseif ($a > 13) {
+    echo "You can drink water and chai only.";
+}
+else {
+    echo "You can drink water only.";
+}
+echo "<br>";
+$age = 34;
+if ($age<=65 and $age>=25) {
+    echo "You can drive <br>";
+}
+else {
+    echo "You can not drive <br>";
+}
+
+switch($age) {
+    case 24: 
+        echo "24 years";
+        break;
+    case 34:
+        echo "34 years old";
+        break;
+    case 45: 
+        echo "45 years old";
+        break;
+    default :
+        echo "Weird age";
+        break;
+}
+
+$i = 0;
+while($i < 10){
+    echo "I am number $i <br>";
+    $i++;
+}
+
+for ($index=1; $index<5; $index++) { 
+    # code...
+    echo "This is number $index <br>";
+}
 
 ?>
