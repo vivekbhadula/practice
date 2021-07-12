@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #03a9f4;
+}
+
+/* Mobile Nav Bar */
+
+nav {
+    display: none;
+    width: 100vw;
+    background-color: white;
+    font-size: 3rem;
+    font-family: 'Avenir';
+    font-weight: bold;
+}
+
+.navLogo {
+    margin: 2rem 0rem 1rem 3rem;
+}
+
+.burger {
+    position: absolute;
+    right: 2.5rem;
+    top: 2rem;
+}
+
+.line {
+    height: .2rem;
+    width: 2.2rem;
+    background-color: #03a9f4;
+    margin: .5rem 0;
+}
+
+/* The front Page */
+
+.frontPage {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.bluePart {
+    height: 100vh;
+    width: 100%;
+    background-color: #03a9f4;
+}
+
+/* Blue Page Area */
+
+h1 {
+    color: white;
+    margin: 8rem 8rem 1rem;
+    font-size: 4.2rem;
+    line-height: 3.5rem;
+    letter-spacing: 0rem;
+    font-family: 'Varela Round',sans-serif,'Avenir';
+}
+
+.subHeading {
+    color: white;
+    font-size: 1.3rem;
+    margin: 2rem 8rem 1rem;
+    line-height: 2.5rem;
+    font-family: 'Avenir','Apple Symbols';
+}
+
+.searchLogo {
+    background-color: white;
+    color: #03a9f4;
+    display: inline-block;
+    padding: 1rem 1.1rem;
+    border-radius: 50%;
+    margin: 4rem 1.5rem 1rem 8rem;
+    font-size: 1.2rem;
+}
+
+.text {
+    display: inline-block;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Avenir','Apple Symbols';
+    margin-top: 2rem;
+}
+
+.mobileText {
+    display: none;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Avenir';
+}
+
+.lockLogo {
+    display: flex;
+}
+
+.lock {
+    height: 1.3rem;
+    width: 2.3rem;
+    background-color: white;
+    padding: 1rem .5rem;
+    border-radius: 100%;
+    margin: 1rem 1.8rem 1rem 8rem;
+    display: inline-block;
+}
+
+/* White Part Area */
+
+.whitePart {
+    background-color: white;
+    border-radius: 10px;
+    height: 100vh;
+    width: 100%;
+}
+
+.imgPart {
+    text-align: right;
+}
+
+.topRightImg {
+    height: 1.5rem;
+    width: 2.3rem;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.threeFeatures {
+    margin: 8rem 8rem;
+}
+
+.feature {
+    display: flex;
+    margin-top: 5rem;
+}
+
+.featureLogo {
+    font-size: 1.8rem;
+    color: white;
+    background-color: #03a9f4;
+    border-radius: 100%;
+    padding: .9rem 1rem;
+}
+
+.boldText {
+    margin-top: -1.1rem;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Avenir';
+}
+
+.featureText {
+    font-size: .9rem;
+    margin-left: -4.7rem;
+    margin-top: 1.3rem;
+    font-family: 'Avenir';
+    line-height: 2rem;
+    margin-right: -3rem;
+}
+
+.mobileTextWhite {
+    display: none;
+    font-family: 'Avenir';
+}
+
+/* Responsive Design */
+
+/* TabView */
+
+@media only screen and (max-width: 1280px) {
+    * {
+        font-size: 90%;
+    }
+    nav {
+        display: block;
+        display: flex;
+    }
+    .frontPage {
+        flex-direction: column;
+    }   
+    .bluePart {
+        height: 50vh;
+    }
+    .whitePart {
+        height: 55vh;
+        border-radius: 0;
+    }
+    h1 {
+        margin-top: 5rem;
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    .subHeading {
+        font-size: 2.2rem;
+    }
+    .text {
+        font-size: 2rem;
+    }
+    .searchLogo {
+        font-size: 2rem;
+    }
+    .lock {
+        height: 2rem;
+        width: 3.2rem;
+        padding: 1.2rem .5rem;
+    }
+    .threefeatures {
+        margin-top: 0rem;
+    }
+    .topRightImg {
+        display: none;
+    }
+    .feature {
+        margin-top: 5rem;
+        flex-direction: column;
+    }
+    .featureText {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 1rem 1rem 4rem 0rem;
+    }
+    .boldText {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: 2rem;
+        margin-top: -.5rem;
+    }
+    .featureLogo {
+        margin-top: -5rem;
+        position: absolute;
+        left: 49%;
+    }
+}
+
+/* iPadView */
+
+@media only screen and (max-width: 920px) {
+    .bluePart {
+        height: 80%;
+    }
+    .whitePart {
+        height: 60%;
+    }
+}
+
+/* MobileView */
+
+@media only screen and (max-width: 750px) {
+    * {
+        font-size: 70%;
+    }
+    body {
+        background-color: white;
+    }
+    .bluePart {
+        height: 70%;
+        border-radius: 10px;
+    }
+    nav {
+        display: block;
+        display: flex;
+    }
+    h1 {
+        font-size: 4rem;
+        margin: 4rem 3rem;
+    }
+    .subHeading {
+        margin: 4rem 8rem 4rem 3rem;
+        font-size: 1.5rem;
+        line-height: 1.65rem;
+    }
+    .mobileText {
+        display: inline-block;
+        font-size: 1.7rem;
+        margin-bottom: 2rem;
+    }
+    .text {
+        display: none;
+    }
+    .second {
+        margin-left: 1.4rem;
+        margin-top: 1.6rem;
+    }
+    .searchLogo {
+        padding: 1rem 1.1rem;
+        border-radius: 50%;
+        margin: 2rem 3rem 1rem;
+        font-size: 1.2rem;
+    }
+    .lock {
+        margin: 1rem 1.8rem 1rem 3rem;
+        display: inline-block;
+        height: 1.3rem;
+        width: 2.3rem;
+        padding: 1rem .53rem;
+    }
+    .topRightImg {
+        display: none;
+    }
+    .threeFeatures {
+        margin: 4rem 3rem;
+    }
+
+    /* White Part */
+
+    .whitePart {
+        height: 50%;
+        width: 100%;
+        border-radius: 0;
+    }
+    .feature {
+        flex-direction: row;
+    }
+    .featureLogo {
+        font-size: 1.7rem;
+        margin-top: 1.6rem;
+        position: unset;
+    }
+    .boldText {
+        font-size: 2.5rem;
+        margin-top: -2.5rem;
+    }
+    .featureText {
+        display: none;
+    }
+    .mobileTextWhite {
+        display: inline-block;
+        font-size: 1.5rem;
+        margin: 1.5rem 1rem 1rem -6.2rem;
+        line-height: 2.4rem;
+    }
+    .feature3 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    * {
+        font-size: 60%;
+    }
+    .mobileTextWhite {
+        margin-left: -5.5rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    * {
+        font-size: 50%;
+    }
+}
