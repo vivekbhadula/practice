@@ -1,9 +1,4 @@
 <?php
-echo "Hello World";
-echo 5+9;
-?>
-
-<?php
 
 $name = "Vivek";
 $income = 100000;
@@ -69,14 +64,58 @@ switch($age) {
 }
 
 $i = 0;
-while($i < 10){
+while($i < 3){
     echo "I am number $i <br>";
     $i++;
 }
 
-for ($index=1; $index<5; $index++) { 
+for ($index=1; $index<3; $index++) { 
     # code...
     echo "This is number $index <br>";
+}
+
+$i=0;
+do {
+    echo "$i <br>";
+    $i++;
+} while($i<3);
+
+$arr = array("ab","cd","ef","gh");
+foreach ($arr as $var) {
+    echo "$var <br>";
+}
+
+function processMarks($arr_marks) {
+    $sum = 0;
+    foreach ($arr_marks as $value) {
+        $sum += $value;
+    }
+    return $sum;
+}
+
+$vivek = array(56,43,46,50,45,56);
+$sumvivek = processMarks($vivek);
+
+$jack = [45,56,45,34,45,56];
+$sumjack = processMarks($jack);
+echo "Total marks scored by vivek out of 360 is $sumvivek <br>";
+echo "Total marks scored by jack out of 360 is $sumjack <br>";
+
+echo "Date <br>";
+$d = date("dS F Y");
+$e = date("d/m/Y");
+$f = date("d/m/Y, g:i");
+echo "Today's is $d <br> $e <br> $f <br>";
+
+$favCol = array(
+    'shubham' => 'red',
+    'skill' => 'blue',
+    'bree' => 'black',
+    7 => 'white'
+);
+
+foreach ($favCol as $key => $value) {
+    echo "<br> Favourite color of $key is $value";
 }
 
 ?>
