@@ -118,4 +118,39 @@ foreach ($favCol as $key => $value) {
     echo "<br> Favourite color of $key is $value";
 }
 
+$multiDimArr = array(
+    array(
+        array(2,4,6),
+        array(4,5,6) 
+    ),
+    array(
+        array(1,2,3),
+        array(5,6,3)
+    ),
+    array(
+        array(4,2,1),
+        array(3,2,3)
+    )
+);
+
+for ($i=0; $i < count($multiDimArr); $i++) {
+    for ($j=0; $j < count($multiDimArr[$i]); $j++) {
+        for ($k=0; $k < count($multiDimArr[$i][$j]); $k++) { 
+            echo $multiDimArr[$i][$j][$k];
+            echo " ";
+        }
+        echo "<br>";
+    }
+    echo "<br>";
+}
+
+$a = 98;
+$b = 90;
+
+function printValue() {
+    global $a, $b;
+    echo "a is $a and b is $b <br>";
+}
+printValue();
+
 ?>
